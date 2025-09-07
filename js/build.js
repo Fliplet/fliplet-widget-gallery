@@ -11,7 +11,7 @@ Fliplet.Widget.instance('image-gallery', function(data) {
 
     if (options.appendImages) {
       // Update remote image URLs to authenticated URLs
-      _.forEach(data.images, function(image) {
+      (data.images || []).forEach(function(image) {
         var $img = $('<img />');
 
         image.url = Fliplet.Media.authenticate(image.url);

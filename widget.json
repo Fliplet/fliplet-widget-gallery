@@ -14,7 +14,6 @@
       "fliplet-core",
       "fliplet-studio-ui",
       "handlebars",
-      "lodash",
       "jquery-ui"
     ],
     "assets": [
