@@ -244,7 +244,7 @@ window.addEventListener('message', function(event) {
 });
 
 function updateTitle(index) {
-  if (!_.isNumber(index) || !selectedImage || !selectedImage.id) {
+  if (typeof index !== 'number' || !selectedImage || !selectedImage.id) {
     return;
   }
 
